@@ -5,5 +5,5 @@ Installare vagrant da [https://www.vagrantup.com/downloads.html](https://www.vag
 $ vagrant up
 ```
 
-# Lancio virus
-La cartella test contiene il virus. Lanciare `./virus.sh` per testare il funzionamento del virus.
+# Launch virus
+Into the directory `test` execute `./virus`.
