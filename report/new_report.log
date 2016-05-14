@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.5)  11 MAY 2016 11:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.5)  14 MAY 2016 03:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**report.tex
-(./report.tex
+**new_report.tex
+(./new_report.tex
 LaTeX2e <2015/10/01> patch level 1
 Babel <3.9m> and hyphenation patterns for 79 languages loaded.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
@@ -850,25 +850,28 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen191
 \Gm@dimlist=\toks43
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
 
 LaTeX Warning: Unused global option(s):
     [6.5pt].
 
-(./report.aux)
-\openout1 = `report.aux'.
+(./new_report.aux)
+\openout1 = `new_report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
 \c@lstlisting=\count140
  ABD: EveryShipout initializing macros
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -936,15 +939,15 @@ e
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(21.68121pt, 554.14545pt, 21.68121pt)
-* v-part:(T,H,B)=(21.68121pt, 801.68442pt, 21.68121pt)
+* h-part:(L,W,R)=(12.28577pt, 572.93634pt, 12.28577pt)
+* v-part:(T,H,B)=(12.28577pt, 820.47531pt, 12.28577pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=554.14545pt
-* \textheight=801.68442pt
-* \oddsidemargin=-50.58878pt
-* \evensidemargin=-50.58878pt
-* \topmargin=-87.58878pt
+* \textwidth=572.93634pt
+* \textheight=820.47531pt
+* \oddsidemargin=-59.98422pt
+* \evensidemargin=-59.98422pt
+* \topmargin=-96.98422pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -963,23 +966,40 @@ e
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 71.
-[1
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 73.
+LaTeX Font Info:    Try loading font information for U+msa on input line 121.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 121.
 
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./report.aux) ) 
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 121.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Try loading font information for U+stmry on input line 121.
+
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/stmaryrd/Ustmry.fd) [1
+
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./new_
+report.aux) ) 
 Here is how much of TeX's memory you used:
- 16684 strings out of 493054
- 316696 string characters out of 6134766
- 653682 words of memory out of 5000000
- 19902 multiletter control sequences out of 15000+600000
- 3808 words of font info for 15 fonts, out of 8000000 for 9000
+ 16728 strings out of 493054
+ 318011 string characters out of 6134766
+ 729694 words of memory out of 5000000
+ 19916 multiletter control sequences out of 15000+600000
+ 6437 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 61i,5n,84p,468b,1120s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmtt10.pfb>
-Output written on report.pdf (1 page, 44660 bytes).
+ 61i,9n,84p,597b,1107s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mtt10.pfb>
+Output written on new_report.pdf (1 page, 47051 bytes).
 PDF statistics:
  19 PDF objects out of 1000 (max. 8388607)
  13 compressed objects within 1 object stream
