@@ -1,10 +1,24 @@
-# Lancio virus all'interno della macchina virtuale
-## Requisiti
+# Bash virus 
+## Requirements
 - Vagrant [(https://www.vagrantup.com/downloads.html)]((https://www.vagrantup.com/downloads.html))
 
-## Creazione macchina virtuale
-Spostarsi all'interno della cartella `test-virus` e lanciare `vagrant up`. Per collegarsi lanciare `vagrant ssh` dalla cartella `test-virus`
-La cartella `test` viene montata all'interno della cartella `test` della macchina virtuale.
+## Creating the VM
+```
+$ git clone https://github.com/VincenzoArceri/bash-virus.git
+$ cd bash-virus\test-virus
+$ vagrant up
+$ vagrant ssh
+```
 
-# Modifica al virus
-Copiare il file `virus.sh` all'interno della cartella `test` per poterlo eseguire all'interno della macchina virtuale.
+The VM contains:
+- `test/virus.sh`: a copy of the bash virus, the same present at the master
+- `test/testo.txt`: an example of an infected file
+- `test/dummy.sh`: an example of an uninfected file
+- `test/test.sh`: an example of an uninfected and uninfectable file
+
+## Execute the virus
+Launch commands into the VM
+```
+$ cd test
+$ ./virus.sh
+```
