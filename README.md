@@ -1,4 +1,4 @@
-# Bash virus 
+# Example of Bash virus 
 ## Requirements
 - Vagrant [(https://www.vagrantup.com/downloads.html)]((https://www.vagrantup.com/downloads.html))
 
@@ -22,3 +22,7 @@ Launch commands into the VM
 $ cd test
 $ ./virus.sh
 ```
+
+# Contributors
+- Vincenzo Arceri vincenzo.arceri@studenti.univr.it 
+- Giovanni Liboni giovanni.liboni@studenti.univr.it
