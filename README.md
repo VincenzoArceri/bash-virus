@@ -24,5 +24,5 @@ $ ./virus.sh
 ```
 
 # Contributors
-- Vincenzo Arceri vincenzo.arceri@studenti.univr.it 
+- Vincenzo Arceri vincenzo.arceri@univr.it 
 - Giovanni Liboni giovanni.liboni@studenti.univr.it
